@@ -128,7 +128,7 @@ The two categories can overlap. For example, delaying a reply may simultaneously
 
 The complete taxonomy contains 54 tags.
 
-View Tag Taxonomy⁠￼
+[View Tag Taxonomy](./tag-taxonomy.md)￼
 
 ## What the Corpus Revealed
 
