@@ -1,1 +1,0 @@
-# Communication Anxiety Taxonomy
