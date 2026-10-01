@@ -27,9 +27,18 @@ The key shift was from **“reading AI suggestions”** to **“choosing the mes
 The interface evolved from an AI suggestion interface to a send-decision interface.  
 界面从一个 AI 建议界面，逐渐转向帮助用户做发送决策的界面。
 
-![Murmur AI UI evolution: before and after](./images/ui-evolution.png)
+## Final UI｜最终版本
 
----
+The final UI was adapted for both English and Chinese interfaces, with differences in layout and interaction details.  
+最终 UI 分别适配了英文和中文界面，因此在布局和交互细节上存在一定差异。
+
+### English Version｜英文版
+
+![Murmur AI final UI - English](./images/final-ui-en.png)
+
+### Chinese Version｜中文版
+
+![Murmur AI final UI - Chinese](./images/final-ui-zh.png)
 
 ## 2. UI Brief｜UI 设计 Brief
 
