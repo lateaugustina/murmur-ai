@@ -123,14 +123,20 @@ Reasoning & Confirmation
 User Decides
         ↓
 Send
-
+```
 
 ### 5.2 Product Intervention Point｜核心介入时机
+
 Murmur should primarily intervene when users have calmed down enough to seek help, but are still uncertain whether or how to send the message.
+
 Murmur 主要介入于用户已经从最强烈的情绪反应中稍微恢复、开始准备沟通，但仍然不确定是否以及如何发送的节点。
+
 ---
+
 ## 6. Functional Requirements｜功能需求
+
 ### 6.1 P0 — MVP｜第一版必须有
+
 | Feature 功能 | User Story 用户故事 | Key Requirements 设计要求 | Research Basis 研究依据 |
 |---|---|---|---|
 | **Scenario-based Onboarding / 场景化 Onboarding** | I can tell Murmur what situations I commonly encounter without writing a long description. / 我可以通过简单选择告诉 Murmur 自己常遇到什么沟通问题。 | 3–4 questions; collect common scenarios, relationship types, and communication preferences. / 3–4 个问题；收集常见场景、关系类型和表达偏好。 | Interviews 03 & 04 |
@@ -139,7 +145,9 @@ Murmur 主要介入于用户已经从最强烈的情绪反应中稍微恢复、�
 | **Low-Input Interaction / 低输入交互** | I can provide rough thoughts without reconstructing the entire emotional context. / 我可以直接输入粗糙想法，不需要重新整理完整背景。 | Prefer selectable options and short input; accept raw material. / 优先选择题和短输入；允许直接输入原始材料。 | Interviews 03 & 04 |
 | **Refusal Support / 拒绝支持** | I can refuse someone while understanding that my boundary is reasonable. / 我可以拒绝别人，同时确认自己的边界是合理的。 | Provide refusal wording plus reasoning that supports the user's own judgment. / 提供拒绝表达，同时帮助用户理解自己的拒绝为什么合理。 | Interview 03 + corpus |
 | **Communication Profiles / 人物档案** | Murmur remembers how I communicate with recurring people. / Murmur 记住我与长期沟通对象之间的沟通方式。 | Store only fields that visibly affect output: style, formality, emoji habits, formatting preferences, previous communication patterns. / 只记录能够明显影响输出的字段：风格、正式程度、表情习惯、排版偏好、过去沟通方式。 | Interviews 01 & 04 |
+
 ### 6.2 P1 — Next Iteration｜第二阶段
+
 | Feature 功能 | User Value 用户价值 | Key Requirements 核心要求 |
 |---|---|---|
 | **Post-Send Support / 发送后支持** | Reduce uncertainty while waiting for a response. / 降低发送后的等待焦虑。 | Calibrate likely responses and possible reasons for delayed replies. / 校准可能反应及未及时回复的可能原因。 |
@@ -149,8 +157,11 @@ Murmur 主要介入于用户已经从最强烈的情绪反应中稍微恢复、�
 | **Reconnect Opening / 断联复联开场** | Reduce the barrier to restarting contact. / 降低重新建立联系的第一句话门槛。 | Generate context-aware openings based on relationship and silence duration. / 根据关系和断联时间生成自然开场。 |
 | **Reply Interpretation / 回复解读** | Reduce uncertainty about received messages. / 降低对收到消息的过度解读。 | Explain possible interpretations without presenting speculation as fact. / 提供可能的理解方式，但不把猜测当作事实。 |
 | **Communication Reflection / 沟通反思** | Help users gradually understand their own communication patterns. / 帮助用户逐渐理解自己的沟通规律。 | Summarize recurring patterns and provide reflective feedback. / 总结长期沟通规律并提供反思反馈。 |
+
 ---
+
 ## 7. Product Principles｜产品原则
+
 | Principle 原则 | Requirement 要求 |
 |---|---|
 | **Preserve the user's voice / 保留用户表达** | If the user thinks “This is not something I would say,” the output has failed. / 如果用户觉得「这不是我会说的话」，则输出失败。 |
@@ -159,8 +170,11 @@ Murmur 主要介入于用户已经从最强烈的情绪反应中稍微恢复、�
 | **Support, don't decide / 支持而非代替决策** | Murmur provides analysis and options while leaving the final decision to the user. / Murmur 提供分析和选择，但最终决定权属于用户。 |
 | **Honest feedback / 真实反馈** | Murmur should not reassure users by saying something it does not have sufficient reason to believe. / 不应为了安慰用户而给出缺乏依据的保证。 |
 | **Communication-specific / 专注沟通** | Avoid becoming a general-purpose AI assistant. / 避免成为通用 AI 助手。 |
+
 ---
+
 ## 8. Out of Scope｜明确不做
+
 | Feature 不做功能 | Reason 原因 |
 |---|---|
 | **Voice Input / 语音输入** | Interviews showed a consistent preference for text input; no sufficient demand signal yet. / 四位访谈对象均以文字输入为主，目前没有足够需求信号。 |
@@ -169,22 +183,32 @@ Murmur 主要介入于用户已经从最强烈的情绪反应中稍微恢复、�
 | **General AI Chat / 通用 AI 聊天** | Would weaken product specialization and differentiation. / 会削弱产品专一性和差异化。 |
 | **Message Reminders / 消息提醒** | Notifications could become another source of communication pressure. / 提醒可能成为新的沟通压力来源。 |
 | **Clinical Psychological Support / 临床心理支持** | Outside the product's intended scope. / 超出产品定位。 |
+
 ---
+
 ## 9. Core User Stories｜核心用户故事
+
 | Scenario 场景 | User Situation 用户处境 | Murmur Flow Murmur 流程 | Expected Outcome 预期结果 |
 |---|---|---|---|
 | **Authority Communication / 权威沟通** | User wants to ask an advisor about delayed feedback but worries about sounding pushy. / 用户想询问导师论文进度，但担心显得催促。 | Authority → Help Me Write → Rough Input → Generate → Explain why it is okay to send. / 权威 → 帮我写 → 粗略输入 → 生成 → 解释为什么可以发送。 | User understands the communication strategy and sends the message. / 用户理解沟通策略并发送。 |
 | **Help Me Check / 帮我看** | User already has a carefully edited message but still wants external confirmation. / 用户已经反复修改消息，但仍需要确认。 | Authority → Help Me Check → Paste Draft → Recipient Perspective → Confirmation. / 权威 → 帮我看 → 粘贴草稿 → 对方视角 → 确认。 | User can make the final decision without asking another person. / 用户无需再找别人确认即可做最终决定。 |
 | **Refusal / 拒绝** | User wants to refuse a request but feels guilty and worries the reason may be challenged. / 用户想拒绝，但内疚并担心理由被追问。 | Family → Help Me Check → Paste Draft → Credibility Check → Boundary Support. / 家庭 → 帮我看 → 粘贴草稿 → 理由检验 → 边界支持。 | User can communicate a boundary without unnecessarily changing the decision. / 用户能够表达边界，而不是因为内耗再次妥协。 |
 | **Reconnect / 断联复联** | User wants to reconnect after a long silence but cannot formulate the opening. / 用户想重新联系一个长期没联系的人，却不知道怎么开口。 | Friends → Reconnect → Relationship Context → Generate Opening → Confirmation. / 朋友 → 断联复联 → 关系背景 → 生成开场 → 确认。 | User obtains a natural opening and can initiate contact. / 用户获得自然开场并能够主动联系。 |
+
 ---
+
 ## 10. Success Metrics｜成功指标
+
 ### 10.1 North Star Metric｜北极星指标
+
 | Metric 指标 | Definition 定义 | Why 为什么 |
 |---|---|---|
 | **Message Send Rate / 消息发出率** | Percentage of users who send a message after generating or checking it with Murmur. / 用户使用 Murmur 生成或检查消息后最终将消息发送出去的比例。 | Murmur's core value is helping users move from communication difficulty to action. / Murmur 的核心价值是帮助用户从沟通困难走向实际行动。 |
+
 **MVP target:** ≥ 70%
+
 ### 10.2 Secondary Metrics｜次级指标
+
 | Metric 指标 | Definition 定义 | MVP Target |
 |---|---|---:|
 | **Onboarding Completion Rate / Onboarding 完成率** | Percentage of first-time users completing onboarding. / 首次使用用户完成 Onboarding 的比例。 | ≥ 75% |
@@ -192,33 +216,52 @@ Murmur 主要介入于用户已经从最强烈的情绪反应中稍微恢复、�
 | **Profile Activation Rate / 档案激活率** | Percentage of users creating at least one communication profile. / 创建至少一个人物档案的用户比例。 | ≥ 50% |
 | **Scenario Selection Rate / 场景选择率** | Percentage of users choosing a predefined scenario before input. / 用户在输入前选择预设场景的比例。 | ≥ 60% |
 | **7-Day Retention / 7 日留存率** | Percentage of users returning within seven days. / 七天内再次使用产品的用户比例。 | ≥ 40% |
+
 Targets are initial product hypotheses and should be recalibrated after real usage data is available.
+
 以上目标均为早期产品假设，需在获得真实使用数据后重新校准。
+
 ---
+
 ## 11. Product Evolution｜产品成长路径
+
 Murmur is designed to evolve from solving individual communication problems toward helping users understand their own communication patterns.
+
 Murmur 的长期方向不是让用户永远依赖 AI，而是从解决单次沟通问题逐渐走向帮助用户理解自己的沟通模式。
+
 | Stage 阶段 | Core Capability 核心能力 | User Value 用户价值 |
 |---|---|---|
 | **MVP — Help Me Write / 帮我写** | Scenario-based input + message generation + confirmation. / 场景化输入 + 消息生成 + 发送确认。 | Solve the immediate barrier to sending. / 解决单次消息发送障碍。 |
 | **Next — Help Me Check / 帮我看** | Draft verification + recipient perspective + format analysis. / 草稿检查 + 对方视角 + 格式分析。 | Replace the external confirmation step users currently outsource to friends. / 替代用户目前依赖朋友完成的确认环节。 |
 | **Long-term — Help Me Reflect / 帮我反思** | Communication pattern analysis + reflection + personalized feedback. / 沟通规律分析 + 反思 + 个性化反馈。 | Help users gradually internalize communication skills and reduce dependence on the tool. / 帮助用户逐渐内化沟通能力，并降低对工具的长期依赖。 |
+
 ---
+
 ## 12. Pricing Hypothesis｜定价假设
+
 Four interviews produced an early qualitative willingness-to-pay range, but this should not be treated as validated market pricing.
+
 四次访谈形成了初步的定性付费意愿区间，但目前不能视为经过市场验证的正式定价。
+
 | Participant | Interview Signal |
 |---|---:|
 | User 01 | Up to ¥30/month |
 | User 02 | Around ¥10/month |
 | User 03 | ¥5–10/month currently; around ¥30/month after entering the workplace |
 | User 04 | Up to ¥30/month |
+
 **Initial pricing hypothesis:** ¥25–28/month for a future professional tier.
+
 **Early product strategy:** validate product value and usage behavior before treating pricing as a confirmed business decision.
+
 ---
+
 ## 13. Validation Status｜验证状态
+
 The following areas have been supported by the four interviews:
+
 以下内容已得到四次访谈的支持：
+
 | Validated Signal 已验证信号 | Current Interpretation 当前判断 |
 |---|---|
 | Communication difficulty is a real recurring problem. / 沟通困难是真实且反复出现的问题。 | Core problem confirmed. / 核心问题成立。 |
@@ -227,15 +270,21 @@ The following areas have been supported by the four interviews:
 | General AI is already a real workaround. / 通用 AI 已经是现实替代方案。 | Murmur must differentiate beyond generation. / Murmur 必须在生成之外形成差异化。 |
 | Help Me Check is a recurring need in Interviews 03 and 04. / 「帮我看」在用户03和04中重复出现。 | Promoted to P0. / 升级为 P0。 |
 | Communication profiles show demand signals. / 人物档案出现明确需求信号。 | Included in P0, but implementation should remain lightweight. / 纳入 P0，但初期实现应保持轻量。 |
+
 The following areas remain hypotheses:
+
 以下内容仍属于待验证假设：
+
 - Whether communication profiles provide greater value than simply using multiple general-AI conversations.
 - Whether recipient-perspective post-send support produces measurable value.
 - Whether onboarding choices improve actual first-use completion and retention.
 - Whether refusal justification increases actual send rate.
 - Whether crush-related scenarios become a sufficiently frequent product use case.
+
 ---
+
 ## 14. Document Status｜文档状态
+
 **Version:** v0.3  
 **Research basis:** 108 corpus samples + 4 user interviews  
 **Stage:** Research completed → Demo development  
