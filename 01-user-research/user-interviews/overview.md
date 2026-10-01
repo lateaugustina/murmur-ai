@@ -15,8 +15,8 @@
 Participants were selected to cover different communication contexts and different forms of communication difficulty.
 访谈对象有意覆盖不同沟通场景和不同类型的沟通困难。
 
-ID	| ID | Participant 访谈对象 | Main Scenario 主要场景 | Key Problem 核心问题 |
-|---|---|---|---|
+| ID | Participant 访谈对象 | Main Scenario 主要场景 | Key Problem 核心问题 |
+| --- | --- | --- | --- |
 | 01 | 19, Undergraduate student / 19岁，本科生 | Intimate relationship / 亲密关系 | Relationship uncertainty / 关系不确定 |
 | 02 | 26, Elementary school teacher / 26岁，小学教师 | Workplace & parent communication / 职场与家校沟通 | Communication fatigue / 沟通精力消耗 |
 | 03 | 24, New graduate / 24岁，应届毕业生 | Family & boundary setting / 家庭与边界表达 | Refusal and guilt / 拒绝与内疚 |
@@ -27,9 +27,8 @@ ID	| ID | Participant 访谈对象 | Main Scenario 主要场景 | Key Problem �
 The interviews followed a hypothesis-driven structure rather than a fixed questionnaire.
 访谈不是固定问卷，而是围绕已有假设，根据用户回答动态追问。
 
-Stage 阶段	Focus 重点
-1. | Stage 阶段 | Focus 重点 |
-|---|---|
+| Stage 阶段 | Focus 重点 |
+| --- | --- |
 | 1. Concrete Event / 具体事件 | Ask about a recent real communication situation / 追问最近发生的真实事件 |
 | 2. Emotion & Behavior / 情绪与行为 | Explore what the user felt and did / 了解用户当时的情绪和行为 |
 | 3. Current Workaround / 当前解决方式 | Understand how the user currently handles the problem / 了解用户现在如何解决 |
@@ -37,7 +36,6 @@ Stage 阶段	Focus 重点
 | 5. Product Concept / 产品概念 | Test reactions to Murmur’s core concept / 验证用户对 Murmur 核心概念的反应 |
 | 6. Usage Conditions / 使用条件 | Explore when and why users would choose Murmur / 了解用户什么时候会选择使用 |
 | 7. Input & WTP / 输入与付费 | Test input burden and early willingness-to-pay signals / 验证输入成本和初步付费意愿 |
-
 
 ## 4. Use of Interview Materials｜访谈材料如何使用
 
