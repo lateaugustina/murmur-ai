@@ -215,4 +215,4 @@ The report synthesized the corpus into:
 * 后续访谈假设；
 * AI 行为与产品设计的初步原则。
 
-View User Insights Report⁠
+[View User Insights Report](./user-insights-report.md)
