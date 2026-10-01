@@ -45,20 +45,8 @@ The selected samples were manually entered into a Notion database for structured
 
 Each sample was organized into the following fields:
 
-Field	Description
-ID	Sample number
-One-line Summary	One-sentence summary of the sample
-Value Rating	Initial assessment of research value
-Raw Content	Original user-generated content
-Source Platform	Platform where the sample was found
-Communication Context	Communication scenario
-Trigger Event	Event that triggered the communication difficulty
-Emotion	User’s emotional state
-Behavior	Immediate behavior in response to the situation
-Psychological Mechanism	Underlying psychological mechanism
-Current Coping Strategy	How the user currently tries to handle the situation
-Core Pain Point	Core difficulty identified from the sample
-Product Opportunity	Potential product intervention
+| 序号 ID | 一句话总结 One-line Summary | 价值评级 Value Rating | 原始内容 Raw Content | 来源平台 Source Platform | 沟通场景 Communication Context | 触发事件 Trigger Event | 用户情绪 Emotion | 用户行为 Behavior | 心理机制 Psychological Mechanism | 当前解决方式 Current Coping Strategy | 核心痛点 Core Pain Point | 产品机会点 Product Opportunity |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 The corpus therefore preserves both the original user expression and the structured interpretation of each sample.
 因此，语料库同时保留了用户的原始表达，以及对每条语料进行结构化分析后的信息。
@@ -68,22 +56,22 @@ The corpus therefore preserves both the original user expression and the structu
 The following examples show how individual raw samples were transformed into structured research data and product insights.
 以下示例展示了单条原始语料如何被转化为结构化研究数据，并进一步形成产品洞察。
 
-Sample 11
-
-Field	Analysis
-ID	11
-One-line Summary	Overanalyzes message timing, tone, and consistency, loses trust in their own judgment, and eventually builds a tool to analyze situations and stop spiraling.
-Value Rating	S
-Raw Content	“I keep overthinking texts and i don’t know if i’m the problem or not…” The user repeatedly analyzes reply timing, tone, and inconsistency, asks friends for interpretation, but still does not trust their own judgment. They eventually try to build a small tool to break down situations more clearly and stop spiraling.
-Source Platform	Reddit
-Communication Context	Crush / intimate relationship / general social communication
-Trigger Event	Inconsistent messaging behavior from the other person triggers an ongoing overanalysis loop.
-Emotion	Anxiety; self-doubt; uncertainty; irritation; helplessness (manually tagged)
-Behavior	Overanalyzing messages; asking others to review/interpret; catastrophic interpretation
-Psychological Mechanism	Post-send anxiety; self-presentation pressure
-Current Coping Strategy	Seeking reassurance from others; building a personal tool
-Core Pain Point	The user recognizes that they may be overanalyzing, but cannot stop. The deeper problem is distrust in their own judgment: even after asking friends, they often feel they already know the answer but cannot trust themselves.
-Product Opportunity	A direct signal for Murmur’s conversation interpretation feature: users can describe or provide a conversation context, and Murmur helps interpret the situation objectively and interrupt the spiraling loop. The user’s attempt to build their own tool is a particularly strong signal of unmet demand.
+#### Sample 11
+| Field 字段 | Analysis 分析 |
+| --- | --- |
+| **序号 ID** | 11 |
+| **一句话总结 One-line Summary** | 过度分析对方发消息的时间、语气和一致性，不信任自己的判断力，甚至自己动手做了一个工具来帮自己拆解情境、停止 spiral。<br>Overanalyzes message timing, tone, and consistency, loses trust in their own judgment, and eventually builds a tool to analyze situations and stop spiraling. |
+| **价值评级 Value Rating** | S |
+| **原始内容 Raw Content** | I keep overthinking texts and i don't know if i'm the problem or not<br><br>I feel like I'm losing my mind over something that should be simple.<br><br>Whenever someone texts me, I overanalyze everything:<br>- how long they took to reply<br>- how their tone changed<br>- if they're being dry or just busy<br><br>And it's worse when they're inconsistent. Like one day they're super into you, next day it feels like they don't care at all.<br><br>I keep asking friends what things mean but honestly I feel like I already know the answer most of the time... I just don't trust my own judgment.<br><br>At some point it got so annoying I even tried building a small thing for myself just to break down situations more clearly and stop spiraling.<br><br>But idk if the issue is actually me overthinking or if people really do act like this and I should take it as a sign.<br><br>What would you do in this situation? |
+| **来源平台 Source Platform** | Reddit |
+| **沟通场景 Communication Context** | Crush / 亲密关系 / 泛社交<br>Crush / intimate relationship / general social communication |
+| **触发事件 Trigger Event** | 对方发消息行为不一致，一致性缺失触发无法停止的过度分析循环。<br>Inconsistent messaging behavior from the other person triggers an ongoing overanalysis loop. |
+| **用户情绪 Emotion** | 焦虑；自我怀疑；不确定；烦躁；无力感（人工标签）<br>Anxiety; self-doubt; uncertainty; irritation; helplessness (manually tagged) |
+| **用户行为 Behavior** | 过度分析消息；找人审稿；灾难化解读<br>Overanalyzing messages; asking others for interpretation; catastrophic interpretation |
+| **心理机制 Psychological Mechanism** | 发送后焦虑；自我呈现压力<br>Post-send anxiety; self-presentation pressure |
+| **当前解决方式 Current Coping Strategy** | 向他人倾诉；自建工具<br>Seeking reassurance from others; building a personal tool |
+| **核心痛点 Core Pain Point** | 用户知道自己在过度分析但停不下来。核心是对自己判断力的不信任——问了朋友也觉得自己其实知道答案，但就是无法相信自己。<br>The user recognizes that they may be overanalyzing, but cannot stop. The deeper problem is distrust in their own judgment: even after asking friends, they often feel they already know the answer but cannot trust themselves. |
+| **产品机会点 Product Opportunity** | 这条语料是 Murmur「对话解读」功能最直接的需求来源：用户描述对话情境，Murmur 给出客观分析，帮助用户停止 spiral。用户自己动手做工具，是未满足需求的强信号。<br>A direct signal for Murmur's conversation interpretation feature: users can describe a conversation context, and Murmur helps interpret the situation objectively and interrupt the spiraling loop. The user's attempt to build their own tool is a particularly strong signal of unmet demand. |
 
 Tagging note: Emotion tags were manually assigned by the researcher. AI-assisted tagging was used during structured analysis, but human judgment was retained for emotion labels because emotional interpretation was not consistently accurate enough to rely on automation alone.
 标签说明： 情绪标签由研究者人工判断。结构化分析过程中使用了 AI 辅助，但由于 AI 对人类情绪的识别并不总是足够准确，因此最终情绪标签保留人工判断。
