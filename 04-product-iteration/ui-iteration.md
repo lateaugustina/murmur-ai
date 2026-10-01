@@ -34,11 +34,11 @@ The final UI was adapted for both English and Chinese interfaces, with differenc
 
 ### English Version｜英文版
 
-![Murmur AI final UI - English](./images/final-ui-en.png)
+![Murmur AI final UI - English](../images/final-ui-en.png)
 
 ### Chinese Version｜中文版
 
-![Murmur AI final UI - Chinese](./images/final-ui-zh.png)
+![Murmur AI final UI - Chinese](../images/final-ui-zh.png)
 
 ## 2. UI Brief｜UI 设计 Brief
 
